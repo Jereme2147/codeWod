@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="indexSmall.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
  -->
@@ -24,24 +25,69 @@
         title. probably reserved for add space. not sure.
     </div>
     <header class = "header">
-        menus will go hear. including emblem.
+        <div class = "logoDiv">
+            <img class = "logo" src = "codeWodLogo.png">
+        </div>
+        <div class = "menuDiv">
+            <div class = "pageName">
+                <h3>Code-Wod</h3>
+            </div>
+            <div class="dropDown">
+                <i class="material-icons md-48 dropbtn" onclick="dropDown()">
+                    menu
+                </i>
+                <!-- <button onclick="dropDown()" class="dropbtn">Dropdown</button> -->
+                <div id= "myDropdown" class="dropdown-content">
+                    <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
+                    <a href="#information"  id  = "about">About</a>
+                    <a href="#"id = "currentWod">Current Wod</a>
+                    <a href="#" id = "currentResults">Current results</a>
+                    <a href="#" id = "reset">Reset Screen</a>
+                    <a href="#custom">Contact</a>
+                    <a href="#support">Blog</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+
+        </div>
     </header>
     <div class = "workOutOfTheDayToggle" id = "workOutOfTheDayToggle">
         toggle for workout of the day.
     </div>
-    <div  id = "wod" class = "wod">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdh3M1plDtMy7W0ejwYG8uFoY5ddwC6Pu63KI86ymzJqhr1Ag/viewform?embedded=true"
-            width="100%" height="750px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <div class = "resultDiv" id = "resultDiv">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"></iframe>
     </div>
-    <div class = "information">
-        <ul>
-            <li> 1 why. My theories</li>
-            <li> 2 blog</li>
-            <li> 3</li>
+    <div class = "information" id ="information">
+        <p>     <strong>The purpose: </strong></br>
+                This is a workout designed with first responders in mind. 
+                Behind cancer, Heart Attack is the leading killer of first responders.  We
+                are the only ones who can prevent it. 
+                We work in shorter bursts of intense labor.  Usually, we're 
+                at 100% capacity for 5 to 20 minutes.  Look at it as a full 
+                scba bottle used, or a foot chase. These workouts are designed
+                to train within that time domain.</br></br>
 
-        </ul>
+                None of the workouts posted will be flashy, technical, or overly
+                heavy. If done with intensity and purpose, you <strong>will</strong>
+                get healthier. </br></br>
+                <strong>The goal:</strong></br>
+                We're not here to be the strongest, we're here to go home.
+                 and preferable with no injury.  I feel strongly this has 
+                 been of benifit to my department and I hope more people can
+                 benifit as well. </br><br>
+
+                 <quote>“The goal is to get fit, make it the best hour of your day, stay safe, turn up the music, high five some people, and blow
+                off some steam. So remember that. Relax. Have fun. Work out.”</quote></br>
+                -Pat Sherwood
+
+
+        </p>  
     </div>
-    <footer class = "footer"> 
+    <div id="wod" class="wod">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLrKgvJ0bt5X3oZCzNuig8qitJyjK2FRlFxKZEUWbQtp0GEw/viewform?embedded=true"
+            width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    <footer class = "footer" id = "footer"> 
         <ul>
             <li>contact me</li>
             <li>portfolio</li>
