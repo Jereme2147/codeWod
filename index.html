@@ -7,45 +7,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="indexSmall.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
- -->
-
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Graduate|Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <div class = "title-bar">
-        title. probably reserved for add space. not sure.
+        
     </div>
-    <header class = "header">
+    <header class = "top">
         <div class = "logoDiv">
             <img class = "logo" src = "codeWodLogo.png">
         </div>
         <div class = "menuDiv">
             <div class = "pageName">
-                <h3>Code-Wod</h3>
+                <h2>Code-Wod</h2>
             </div>
             <div class="dropDown">
-                <i class="material-icons md-48 dropbtn" onclick="dropDown()">
-                    menu
+                <i class="fas fa-list-ul fa-3x dropbtn" onclick="dropDown()">
                 </i>
                 <!-- <button onclick="dropDown()" class="dropbtn">Dropdown</button> -->
                 <div id= "myDropdown" class="dropdown-content">
                     <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
-                    <a href="#information"  id  = "about">About</a>
+                    <a href="#"  id  = "about">About</a>
                     <a href="#"id = "currentWod">Current Wod</a>
                     <a href="#" id = "currentResults">Current results</a>
-                    <a href="#" id = "reset">Reset Screen</a>
-                    <a href="#custom">Contact</a>
+                    <a href="#" id = "reset">Home</a>
+                    <a href="#" id = "contact" >Contact</a>
                     <a href="#support">Blog</a>
-                    <a href="#tools">Tools</a>
+                    <!-- <a href="#tools">Tools</a> -->
                 </div>
             </div>
 
@@ -54,10 +47,14 @@
     <div class = "workOutOfTheDayToggle" id = "workOutOfTheDayToggle">
         toggle for workout of the day.
     </div>
-    <div class = "resultDiv" id = "resultDiv">
+    <div class = "contactInfo toggleDivs" id = "contactInfo">
+    <i class="fab fa-twitter fa-2x"></i><i class="fas fa-envelope fa-2x"></i><i class="fab fa-facebook fa-2x"></i><i class="fab fa-github fa-2x"></i>
+
+    </div>
+    <div class = "resultDiv toggleDivs" id = "resultDiv">
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"></iframe>
     </div>
-    <div class = "information" id ="information">
+    <div class = "information toggleDivs" id ="information">
         <p>     <strong>The purpose: </strong></br>
                 This is a workout designed with first responders in mind. 
                 Behind cancer, Heart Attack is the leading killer of first responders.  We

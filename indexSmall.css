@@ -1,19 +1,71 @@
 @media screen and (max-width: 414px){
-.header{
+    /* begin drop down menu */
+ .contactInfo{
+    width: 100%;
+   
+} 
+.dropDown {
+    height: 100%;
+    width: 40%; 
+    position: relative;
+    display: inline-block;
+} 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom-style: solid;  
+    border-width: 1px;
+}
+.dropdown a:hover {background-color: #ddd}
+
+.show {
+    display:block;
+}
+.dropbtn {
+    background-color: #8696B3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10% 5% 10% 60%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    /* background-color: #2b2c2b; */
+    border-style: solid;
+    border-width: 2px;
+    /* border-color: yellow; */
+}
+/* end drop down menu */
+
+.top {
     width: 100%;
     height: 75px;
-    background-color: #7F8182;
+    background-color: #8696B3;
     color: white;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    
 }
 .information {
     width: 100%;
-    height: 400px;
-    background-color: #828485;
     
     
 }
-.information ul{
+.information p{
     margin-top: 0px;
+    padding: 10px;
     
 }
 .footer li{
@@ -22,25 +74,75 @@
 .footer {
     float: left;
 }
+iframe {
+     width: 100%;
+}
+.logo{
+    height: 50px;
+    padding: 8px 2px;
+    display: inline-block;
+}
+.logoDiv {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.menuDiv {
+    width: 80%;
+    height: 100%;
+    float: left;  
+    
+    
+}
+.material-icons.md-48 { font-size: 48px; }
+.pageName {
+    width: 50%;
+    height: 85%;
+    float: left;
+    padding: 5px 5px 5px 10px;
+    text-align: center; 
+}
+.pageName h2{
+    font-size: 25px; 
+    font-family: 'Graduate', cursive;
+    color: #3B65B3;
+    text-shadow: 2px 2px black; 
+}
+.resultDiv{
+    width: 100%;
+    margin: auto;
+    display: none;
+}
 .title-bar{
     width: 100%;
     height: 50px;
-    background-color: black;
+    background: linear-gradient(#585C59, #8696B3 );
     color: white;
+    
+    
+}
+.toggleDivs{
+   background: linear-gradient(#8696B3, #B3A386) ;
 }
 
 .workOutOfTheDayToggle{
     width: 100%;
     height: 30px;
-    background-color: #48494A;
+    background: linear-gradient(#8696B3, #3B65B3);
     color: white; 
+    border-top-style: solid;
+    border-top-color: #3B65B3;
+    border-top-width: 1px;
+    text-align: center; 
+    
+
 }
  .wod {
   /*    visibility: hidden;  */
 }
 
 }
-/* start big screems */
+/* start big screens */
 @media screen and (min-width:700px){
 .header{
     width: 100%;
