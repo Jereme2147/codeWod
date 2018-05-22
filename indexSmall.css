@@ -6,7 +6,7 @@
 } 
 .dropDown {
     height: 100%;
-    width: 40%; 
+    width: 20%; 
     position: relative;
     display: inline-block;
 } 
@@ -15,7 +15,7 @@
     display: none;
     position: absolute;
     background-color: #f6f6f6;
-    min-width: 230px;
+    min-width: auto;
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
@@ -38,7 +38,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    margin: 10% 5% 10% 60%;
+    margin: 10% 5% 10% 30%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -96,17 +96,18 @@ iframe {
 }
 .material-icons.md-48 { font-size: 48px; }
 .pageName {
-    width: 50%;
+    width: 65%;
     height: 85%;
     float: left;
     padding: 5px 5px 5px 10px;
     text-align: center; 
 }
 .pageName h2{
-    font-size: 25px; 
-    font-family: 'Graduate', cursive;
+    font-size: 30px; 
+    font-family: 'Roboto', sans-serif;
     color: #3B65B3;
     text-shadow: 2px 2px black; 
+    margin-top: 5px;
 }
 .resultDiv{
     width: 100%;
