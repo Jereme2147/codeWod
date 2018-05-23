@@ -1,9 +1,45 @@
 @media screen and (max-width: 414px){
     /* begin drop down menu */
+/* .blogToggle{
+    width: 100%;
+    height: 30px;
+    color: black; 
+    border-top-style: solid;
+    border-top-color: #3B65B3;
+    border-top-width: 1px; 
+    text-align: center; 
+} */
+.bottomDivs{
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(83, 83, 85);
+    text-align: center;
+    font-size: 20px;
+    /* text-shadow: 1px 1px 5px black;  */
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.bottomDivs:active{
+    background-color: rgb(245, 70, 70);
+}
  .contactInfo{
     width: 100%;
+    
    
 } 
+.contactInfo div{
+    margin-left: 20%;
+}
+.contactInfo a{
+    padding: 10px;
+    color: black;
+    
+}
 .dropDown {
     height: 100%;
     width: 20%; 
@@ -34,35 +70,30 @@
     display:block;
 }
 .dropbtn {
-    background-color: #8696B3;
-    color: white;
+    color: rgb(83, 83, 85);
     border: none;
     cursor: pointer;
     margin: 10% 5% 10% 30%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    /* background-color: #2b2c2b; */
     border-style: solid;
     border-width: 2px;
-    /* border-color: yellow; */
 }
 /* end drop down menu */
 
 .top {
     width: 100%;
     height: 75px;
-    background-color: #8696B3;
-    color: white;
+    color:#E1E2E6;
     margin-bottom: 0%;
     margin-top: 0%;
     
 }
-.information {
+
+/* .information {
     width: 100%;
-    
-    
-}
+} */
 .information p{
     margin-top: 0px;
     padding: 10px;
@@ -105,7 +136,7 @@ iframe {
 .pageName h2{
     font-size: 30px; 
     font-family: 'Roboto', sans-serif;
-    color: #3B65B3;
+    /* color: #3B65B3; */
     text-shadow: 2px 2px black; 
     margin-top: 5px;
 }
@@ -117,32 +148,48 @@ iframe {
 .title-bar{
     width: 100%;
     height: 50px;
-    background: linear-gradient(#585C59, #8696B3 );
+    /* background: linear-gradient(#585C59, #8696B3 ); */
     color: white;
     
     
 }
-.toggleDivs{
-   background: linear-gradient(#8696B3, #B3A386) ;
-}
+
 
 .workOutOfTheDayToggle{
     width: 100%;
     height: 30px;
-    background: linear-gradient(#8696B3, #3B65B3);
-    color: white; 
-    border-top-style: solid;
+    /* background: linear-gradient(#8696B3, #3B65B3); */
+    color: black; 
+    /* border-top-style: solid;
     border-top-color: #3B65B3;
-    border-top-width: 1px;
+    border-top-width: 1px; */
     text-align: center; 
+}
+/* .resultToggle{
+    width: 100%;
+    height: 30px;
     
-
+    color: black; 
+ 
+    text-align: center; 
 }
+ */
  .wod {
-  /*    visibility: hidden;  */
+   opacity: .5;
 }
 
+
+
 }
+
+
+
+
+
+
+
+
+
 /* start big screens */
 @media screen and (min-width:700px){
 .header{
