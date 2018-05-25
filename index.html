@@ -15,107 +15,121 @@
 </head>
 
 <body>
-    <div class = "title-bar">
-        
-    </div>
-    <header class = "top">
-        <div class = "logoDiv">
-            <img class = "logo" src = "codeWodLogo.png">
-        </div>
-        <div class = "menuDiv">
-            <div class = "pageName">
-                <h2>Code-Wod</h2>
+    
+        <div class = "container">
+            <div class = "title-bar">
             </div>
-            <div class="dropDown">
-                <i class="fas fa-list-ul fa-3x dropbtn" onclick="dropDown()">
-                </i>
-                <!-- <button onclick="dropDown()" class="dropbtn">Dropdown</button> -->
-                <div id= "myDropdown" class="dropdown-content">
-                    <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
-                    <a href="#information"  id  = "about">About</a>
-                    <a href="#"id = "currentWod">Current Wod</a>
-                    <a href="#resultDiv" id = "currentResults">Current results</a>
-                    <!-- <a href="#" id = "reset">Home</a> -->
-                    <a href="#contactInfo" id = "contact" >Contact</a>
-                    <a href="#blog"id = "blogger">Blog</a>
-                    <!--<a href="#tools">Tools</a> -->
+            <header class = "top">
+                <!-- <div class = "logoDiv">
+                    <img class = "logo" src = "codeWodLogo.png">
+                </div> -->
+                <div class = "menuDiv">
+                    <div class = "pageName">
+                        <h2>Code-Wod</h2>
+                    </div>
+                    <div class="dropDown">
+                        <i class="fas fa-list-ul fa-3x dropbtn" onclick="dropDown()">
+                        </i>
+                        <!-- <button onclick="dropDown()" class="dropbtn">Dropdown</button> -->
+                        <div id= "myDropdown" class="dropdown-content">
+                            <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
+                            <a href="#information"  id  = "about">About</a>
+                            <a href="#"id = "currentWod">Current Wod</a>
+                            <a href="#resultDiv" id = "currentResults">Current results</a>
+                            <a href="#" id = "reset">Home</a>
+                            <a href="#contactInfo" id = "contact" >Contact</a>
+                            <a href="#blog"id = "blogger">Blog</a>
+                            <!--<a href="#tools">Tools</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+            <!-- END MENU BAR -->
+            <!-- wod div toggle -->
+            <div class="cross" id="crossDiv">
+                <img src="cross1.png" id = "cross">
+            </div>
+            <div class = "workOutOfTheDayToggle" id = "workOutOfTheDayToggle">
+                <p>&nbsp &nbsp &nbsp click to view &nbsp</p>
+                <i class="fas fa-angle-double-down fa-2x arrow"></i>
+                <p>&nbsp current workout</p>
+            </div> 
+            
+            <!-- wod DIV -->
+            <div id="wod" class="wod wodContainer">
+            <!--  <iframe id="wodIframe" src="https://docs.google.com/forms/d/e/1FAIpQLScLrKgvJ0bt5X3oZCzNuig8qitJyjK2FRlFxKZEUWbQtp0GEw/viewform?embedded=true"
+                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+            
+                <iframe class = ".resp-iframe" id="wodIframe"src="https://docs.google.com/forms/d/e/1FAIpQLSeWO-qoM2sEb_2RQPqCmC3AL_D9BPCF8OIjF6il7FjYd0xgNw/viewform?embedded=true"
+                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
+                
+                
+            </div>
+            <!-- blog div -->
+            <div class="bottomDivs" id="blogToggle">
+                <p>
+                    <i class="fas fa-chevron-circle-down"></i>
+                    <strong>Code Wod Blog</strong>
+                </p>
+            </div>
+            <div class="blog" id="blog">
+                <iframe src="https://code-wod.blogspot.com/" width="100%" height="500">
+                    <p>Your browser does not support iFrames.</p>
+                </iframe>
+            </div>
+            <!-- results div -->
+            <div class="bottomDivs" id="resultToggle">
+                <p ><i class="fas fa-chevron-circle-down"></i><strong>Current Workout Results</strong></p>
+            </div>
+            <div class="resultDiv" id="resultDiv">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"
+                    width="100%" height="250"></iframe>
+            </div>
+           
+            <!-- INFO DIV -->
+            <div class="bottomDivs toggleDivs" id="infoToggle">
+                <p><i class="fas fa-chevron-circle-down"></i><strong>What Code Wod is about</strong></p>
+                </div>
+            <div class="information" id="information">
+                <p>
+                    <strong>The purpose: </strong>
+                    </br>
+                    This is a workout designed with first responders in mind. Behind cancer, Heart Attack is the leading killer of first responders.
+                    We are the only ones who can prevent it. We work in shorter bursts of intense labor. Usually, we're at 100% capacity
+                    for 5 to 20 minutes. Look at it as a full scba bottle used, or a foot chase. These workouts are designed to train
+                    within that time domain.</br>
+                    </br>
+            
+                    None of the workouts posted will be flashy, technical, or overly heavy. If done with intensity and purpose, you
+                    <strong>will</strong>
+                    get healthier. </br>
+                    </br>
+                    <strong>The goal:</strong>
+                    </br>
+                    We're not here to be the strongest, we're here to go home. and preferable with no injury. I feel strongly this has been of
+                    benifit to my department and I hope more people can benifit as well. </br>
+                    <br>
+            
+                    <quote>“The goal is to get fit, make it the best hour of your day, stay safe, turn up the music, high five some people,
+                        and blow off some steam. So remember that. Relax. Have fun. Work out.”</quote>
+                    </br>
+                    -Pat Sherwood
+            
+            
+                </p>
+            </div>
+            <!-- contact division -->
+            <div class = "contactInfo toggleDivs" id = "contactInfo">
+                <div>
+                <a href = "https://twitter.com/jd2147" target = "_blank"> <i class="fab fa-twitter fa-3x" ></i></a>
+                <a href="mailto:jereme.daniels@gmail.com?Subject=wod%20info" target="_top"></a> <i class="fas fa-envelope fa-3x"></i></a>
+                <a href = "https://www.facebook.com/jereme.daniels" target = "_blank"></a><i class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://github.com/jereme2147" target="_blank"><i class="fab fa-github fa-3x"></i></a>
                 </div>
             </div>
+        </div>
 
-        </div>
-    </header>
-    <!-- END MENU BAR -->
-    <!-- wod div toggle -->
-    <div class = "workOutOfTheDayToggle" id = "workOutOfTheDayToggle">
-         <i class="fas fa-angle-double-down fa-2x"></i>
-    </div> 
-    <!-- wod DIV -->
-    <div id="wod" class="wod">
-       <!--  <iframe id="wodIframe" src="https://docs.google.com/forms/d/e/1FAIpQLScLrKgvJ0bt5X3oZCzNuig8qitJyjK2FRlFxKZEUWbQtp0GEw/viewform?embedded=true"
-            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-     -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWO-qoM2sEb_2RQPqCmC3AL_D9BPCF8OIjF6il7FjYd0xgNw/viewform?embedded=true"
-            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>
-    <!-- results div -->
-    <div class="bottomDivs" id="resultToggle">
-        <p ><strong>Current Workout Results</strong></p>
-    </div>
-    <div class="resultDiv" id="resultDiv">
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"
-            width="100%" height="250"></iframe>
-    </div>
-    <!-- blog div -->
-    <div class="bottomDivs" id="blogToggle">
-        <p><strong>Code Wod Blog</strong></p>
-        </div>
-    <div class="blog" id="blog">
-        <iframe src="https://code-wod.blogspot.com/" width="100%" height="500">
-            <p>Your browser does not support iFrames.</p>
-        </iframe>
-    </div>
-    <!-- INFO DIV -->
-    <div class="bottomDivs toggleDivs" id="infoToggle">
-        <p><strong>What Code Wod is all about</strong></p>
-        </div>
-    <div class="information" id="information">
-        <p>
-            <strong>The purpose: </strong>
-            </br>
-            This is a workout designed with first responders in mind. Behind cancer, Heart Attack is the leading killer of first responders.
-            We are the only ones who can prevent it. We work in shorter bursts of intense labor. Usually, we're at 100% capacity
-            for 5 to 20 minutes. Look at it as a full scba bottle used, or a foot chase. These workouts are designed to train
-            within that time domain.</br>
-            </br>
-    
-            None of the workouts posted will be flashy, technical, or overly heavy. If done with intensity and purpose, you
-            <strong>will</strong>
-            get healthier. </br>
-            </br>
-            <strong>The goal:</strong>
-            </br>
-            We're not here to be the strongest, we're here to go home. and preferable with no injury. I feel strongly this has been of
-            benifit to my department and I hope more people can benifit as well. </br>
-            <br>
-    
-            <quote>“The goal is to get fit, make it the best hour of your day, stay safe, turn up the music, high five some people,
-                and blow off some steam. So remember that. Relax. Have fun. Work out.”</quote>
-            </br>
-            -Pat Sherwood
-    
-    
-        </p>
-    </div>
-    <!-- contact division -->
-    <div class = "contactInfo toggleDivs" id = "contactInfo">
-        <div>
-          <a href = "https://twitter.com/jd2147" target = "_blank"> <i class="fab fa-twitter fa-2x" ></i></a>
-          <a href="mailto:jereme.daniels@gmail.com?Subject=wod%20info" target="_top"></a> <i class="fas fa-envelope fa-2x"></i></a>
-          <a href = "https://www.facebook.com/jereme.daniels" target = "_blank"></a><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="https://github.com/jereme2147" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        </div>
-    </div>
-     
    
     
     
