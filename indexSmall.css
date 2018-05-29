@@ -1,18 +1,10 @@
 @media screen and (max-width: 414px){
     /* begin drop down menu */
-/* .blogToggle{
-    width: 100%;
-    height: 30px;
-    color: black; 
-    border-top-style: solid;
-    border-top-color: #3B65B3;
-    border-top-width: 1px; 
-    text-align: center; 
-} */
+
 .bottomDivs{
     font-family: 'Fira Sans', sans-serif;
-    color: rgb(83, 83, 85);
-    text-align: center;
+    color: #29344A;
+    text-align: left;
     font-size: 20px;
     /* text-shadow: 1px 1px 5px black;  */
     font-weight: bold;
@@ -24,21 +16,49 @@
     -webkit-transition:.5s;
     transition:.5s;
 }
+.bottomDivs i{
+    color: red;
+}
+.bottomDivs p{
+    padding: 5%;
+}
+.bottomDivs i{
+    padding-right: 2%;
+}
 .bottomDivs:active{
     background-color: rgb(245, 70, 70);
 }
+.cross{
+    /* background-image: url("cross.jpg"); */
+    height: 100px;
+    align-items: center;
+}
+.cross img{
+    display: block;
+    height: 100px;
+    margin: auto;
+}
  .contactInfo{
     width: 100%;
-    
-   
 } 
 .contactInfo div{
-    margin-left: 20%;
+    margin: 10%;
+    width: 100%;
 }
 .contactInfo a{
-    padding: 10px;
+   padding: 40px 10px;
     color: black;
-    
+    display: inline;
+    margin: auto; 
+}
+.container {
+  /*   border-left-style: inset;
+    border-left-color: red; 
+    border-left-width: 10px; */
+    background-color: white;
+    height: 700px;
+    padding: -1px;
+    border: none;
 }
 .dropDown {
     height: 100%;
@@ -51,7 +71,7 @@
     display: none;
     position: absolute;
     background-color: #f6f6f6;
-    min-width: auto;
+    min-width: 150px;
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
@@ -70,6 +90,7 @@
     display:block;
 }
 .dropbtn {
+
     color: rgb(83, 83, 85);
     border: none;
     cursor: pointer;
@@ -78,36 +99,36 @@
 
 .dropbtn:hover, .dropbtn:focus {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
 }
 /* end drop down menu */
-
+.fullViewMenu {
+    display: none; 
+}
 .top {
     width: 100%;
     height: 75px;
     color:#E1E2E6;
     margin-bottom: 0%;
     margin-top: 0%;
-    
+    border-bottom: #7F8182;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  
 }
-
-/* .information {
-    width: 100%;
-} */
 .information p{
     margin-top: 0px;
     padding: 10px;
-    
 }
-.footer li{
-    display: inline; 
+.resp-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
-.footer {
-    float: left;
-}
-iframe {
-     width: 100%;
-}
+
 .logo{
     height: 50px;
     padding: 8px 2px;
@@ -119,25 +140,23 @@ iframe {
     float: left;
 }
 .menuDiv {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    float: left;  
-    
-    
+    float: left; 
 }
-.material-icons.md-48 { font-size: 48px; }
+/* .material-icons.md-48 { font-size: 48px; } */
 .pageName {
     width: 65%;
     height: 85%;
     float: left;
     padding: 5px 5px 5px 10px;
-    text-align: center; 
+    /* text-align: center;  */
 }
 .pageName h2{
-    font-size: 30px; 
+    font-size: 40px; 
     font-family: 'Roboto', sans-serif;
-    /* color: #3B65B3; */
-    text-shadow: 2px 2px black; 
+    color: #636566; 
+   /*  text-shadow: 2px 2px black;  */
     margin-top: 5px;
 }
 .resultDiv{
@@ -150,70 +169,330 @@ iframe {
     height: 50px;
     /* background: linear-gradient(#585C59, #8696B3 ); */
     color: white;
-    
-    
 }
-
-
+.wodContainer{
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+}
 .workOutOfTheDayToggle{
     width: 100%;
     height: 30px;
-    /* background: linear-gradient(#8696B3, #3B65B3); */
-    color: black; 
-    /* border-top-style: solid;
-    border-top-color: #3B65B3;
-    border-top-width: 1px; */
+    color: #29344A; 
     text-align: center; 
+    border-bottom-style: solid;
+    border-bottom-color: #7F8182;
+    border-bottom-width: 2px;
+    padding-bottom: 5px;
+
 }
-/* .resultToggle{
-    width: 100%;
-    height: 30px;
-    
-    color: black; 
- 
-    text-align: center; 
+.workOutOfTheDayToggle p{
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    margin: auto;
+
 }
- */
  .wod {
-   opacity: .5;
+   height: 750px;
 }
-
-
-
 }
-
-
-
-
-
-
-
-
 
 /* start big screens */
+/* *********************************************************** */
 @media screen and (min-width:700px){
-.header{
+    /* begin drop down menu */
+
+.dropDown {
+    display: none;
+} 
+
+body{
+    background-color: black;  
+}
+.bottomDivs{
+    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
+    color: #29344A;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    padding: 5%;
+}
+/* .bottomDivs:hover{
+    background-color: #C3C7C9;
+} */
+.bottomDivs i:hover{
+    background-color: #C3C7C9;
+}
+.bottomDivs p:hover{
+    background-color: #C3C7C9;
+}
+.bottomDivs i{
+    color: red;
+    background-color: white;
+    
+}
+.bottomDivs p{
+    padding: 5%; 
+    background-color: white; 
+     -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.bottomDivs i{
+    padding-right: 2%;
+    background-color: white; 
+     -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.cross{
+    background-color: white; 
+    height: 100px;
+    align-items: center;
+}
+.cross img{
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+ .contactInfo{
+    background-color: white; 
     width: 100%;
-    height: 300px;
-    background-color: #7F8182;
-    color: white;
+    text-align: center; 
+} 
+.contactInfo div{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contactInfo a{
+   padding: 40px 20px;
+    color: black;
+    display: inline;
+    margin: auto; 
+}
+.contactInfo i{
+      -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.contactInfo i:hover{
+    color: rgb(96, 96, 245); 
+    background-color: #919191;
+    border-style: solid;
+    border-color: rgb(87, 86, 86);
+    border-width: 2px; 
+    border-radius: 5px;
+}
+#contactInfo :first-child{
+    padding: 0;
+}
+.container {
+    width: 60%;
+    height: 800px;
+    margin: auto; 
+    background-color: white; 
+    border: none;
+}
+ .fullViewMenu {
+    color: black; 
+    height: 30px; 
+    width: 100%;
+} 
+.fullViewMenu ul li{
+    padding-left: 20px;
+    padding-right: 5px;
+    display: inline; 
+   
+    
+}
+.information p{
+    margin-top: 0px;
+    padding: 10px;
+}
+.resp-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.logo{
+    height: 50px;
+    padding: 8px 2px;
+    display: inline-block;
+}
+.logoDiv {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.menuDiv {
+    width: 100%;
+    height: 100%;
+    /* float: left;  */
+    
+}
+.pageName {
+    width: 100%;
+    height: 85%;
+    float: left;
+    padding: 5px 5px 5px 10px;
+}
+.pageName h2{
+    font-size: 60px; 
+    font-family: 'Roboto', sans-serif;
+    color: #636566; 
+    margin-top: 5px;
+}
+.resultDiv{
+    width: 100%;
+    margin: auto;
+    display: none;
+}
+.top {
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    color:#E1E2E6;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    border-bottom: #7F8182;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  
 }
 .title-bar{
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: white;
     color: white;
 }
-
 .workOutOfTheDayToggle{
+    background-color: white;
     width: 100%;
     height: 30px;
-    background-color: #48494A;
-    color: white; 
+    color: #29344A; 
+    text-align: center; 
+    border-bottom-style: solid;
+    border-bottom-color: #7F8182;
+    border-bottom-width: 2px;
+    padding-bottom: 5px;
+
 }
-.information {
-    width: 100%;
-    height: 500px;
-    background-color: #828485;
+.workOutOfTheDayToggle p{
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    margin: auto;
+    background-color: white;
+
 }
+ .wod {
+   height: 750px;
+   background-color: white;
+}
+.wodContainer{
+    background-color: white; 
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+}
+/* new menu shit from here down */
+.clearfix:after {
+display:block;
+clear:both;
+}
+.clearfix {
+    margin: 0px; 
+}
+/*----- Menu Outline -----*/
+.menu-wrap {
+width:100%;
+box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+background:#3e3436;
+}
+.menu {
+width:100%;
+margin:0px ;
+text-align: center; 
+}
+.menu li {
+margin:0px;
+list-style:none;
+font-family:'Ek Mukta';
+}
+.menu a {
+transition:all linear 0.15s;
+color:#919191;
+}
+.menu li:hover > a, .menu .current-item > a {
+text-decoration:none;
+color:#be5b70;
+}
+.menu .arrow {
+font-size:11px;
+line-height:0%;
+}
+/*----- Top Level -----*/
+.menu > ul > li {
+/* float:left; */
+display:inline-block;
+position:relative;
+font-size:19px;
+}
+.menu > ul > li > a {
+padding:5px 10px;
+display:inline-block;
+text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+background:#2e2728;
+}
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+z-index:1;
+opacity:1;
+}
+.sub-menu {
+width:160%;
+padding:5px 0px;
+position:absolute;
+top:100%;
+left:0px;
+z-index:-1;
+opacity:0;
+transition:opacity linear 0.15s;
+box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+background:#2e2728;
+}
+.sub-menu li {
+display:block;
+font-size:16px;
+}
+.sub-menu li a {
+padding:10px 30px;
+display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+background:#3e3436;
+}
+
 }
