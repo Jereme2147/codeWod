@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!--  <script src="https://apis.google.com/js/api.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Fira+Sans|Graduate|Roboto|Russo+One" rel="stylesheet">
 </head>
 
@@ -60,10 +61,10 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">Previous Workouts</a>
+                                        <a href="#" id = "previousWorkouts">Previous Workouts</a>
                                     </li>
                                     <li>
-                                        <a href="#">Previus Results</a>
+                                        <a href="#" id = "previousResults">Previus Results</a>
                                     </li>
                                 </ul>
                             </li>
@@ -88,7 +89,11 @@
                 <i class="fas fa-angle-double-down fa-2x arrow"></i>
                 <p>&nbsp current workout</p>
             </div> 
-            
+            <!-- historical records and wods div -->
+             <div class = "historical" id = "historical" >
+                <iframe src="https://drive.google.com/embeddedfolderview?id=0B9iic2IK-ZThTmZwS3d4WmZyTk0#list" width="100%" height="500" frameborder="0"></iframe>
+
+            </div>
             <!-- wod DIV -->
             <div id="wod" class="wod wodContainer">
             <!--  <iframe id="wodIframe" src="https://docs.google.com/forms/d/e/1FAIpQLScLrKgvJ0bt5X3oZCzNuig8qitJyjK2FRlFxKZEUWbQtp0GEw/viewform?embedded=true"
@@ -125,24 +130,50 @@
                 <p><i class="fas fa-chevron-circle-down"></i><strong>What Code Wod is about</strong></p>
                 </div>
             <div class="information" id="information">
-                <p>
+                
                     <strong>The purpose: </strong>
-                    </br>
-                    This is a workout designed with first responders in mind. Behind cancer, Heart Attack is the leading killer of first responders.
-                    We are the only ones who can prevent it. We work in shorter bursts of intense labor. Usually, we're at 100% capacity
-                    for 5 to 20 minutes. Look at it as a full scba bottle used, or a foot chase. These workouts are designed to train
-                    within that time domain.</br>
-                    </br>
+                   <ul>
+                       <li>
+                         These workouts are designed to reflect the timeframe in which first responders are required to be at 100% intensity.
+                       </li>
+                       <li>
+                         Behind cancer, heart attack is the leading killer of first responders. It’s up to us to prevent it.
+                       </li>
+                       <li>
+                         The stronger we are, the less likely we are to be injured.
+                       </li>
+                       <li>
+                         Feel and look better.
+                       </li>
+                   </ul>
             
-                    None of the workouts posted will be flashy, technical, or overly heavy. If done with intensity and purpose, you
-                    <strong>will</strong>
-                    get healthier. </br>
-                    </br>
-                    <strong>The goal:</strong>
-                    </br>
-                    We're not here to be the strongest, we're here to go home. and preferable with no injury. I feel strongly this has been of
-                    benifit to my department and I hope more people can benifit as well. </br>
-                    <br>
+                
+                    <strong>The workouts:</strong>
+                    <ul>
+                        <li>
+                             They will not be flashy or technical.
+                        </li>
+                        <li>
+                             They will be between 5 minutes and 15 minutes.
+                        </li>
+                        <li>
+                             The weight will reflect that which we need to safely manage on the job.
+                        </li>
+                        <li>
+                             Workouts will be released every 3rd day (standard Kelly schedule).
+                        </li>
+                        <li>
+                             The required equipment will be fairly standard. Medicine balls, kettlebells, barbell, bumper plates, jump rope, pull-up
+                            bar, and a plyo-box. There will also be rowing. If you don’t have access to a Concept 2 rower, ask for a substitute.
+                        </li>
+                        <li>
+                             The workouts are all scalable. I will provide scaling when it is necessary.
+                        </li>
+                        <li>
+                             Please enter your name and a score. This helps me to make better workouts. If you’re opposed to entering a score, enter
+                            a name at a minimum please.
+                        </li>
+                    </ul>
             
                     <quote>“The goal is to get fit, make it the best hour of your day, stay safe, turn up the music, high five some people,
                         and blow off some steam. So remember that. Relax. Have fun. Work out.”</quote>
@@ -150,7 +181,7 @@
                     -Pat Sherwood
             
             
-                </p>
+                
             </div>
             <!-- contact division -->
             <div class = "contactInfo toggleDivs" id = "contactInfo">
