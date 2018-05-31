@@ -1,6 +1,7 @@
 "use strict";
 
 $(document).ready(function(){
+    alert("Please see the blog post for information");
     $("#blog").toggle();
     $("#information").hide();
     $("#wod").hide();

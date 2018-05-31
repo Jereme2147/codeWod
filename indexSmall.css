@@ -6,7 +6,6 @@
     color: #29344A;
     text-align: left;
     font-size: 20px;
-    /* text-shadow: 1px 1px 5px black;  */
     font-weight: bold;
     text-decoration: underline;
     height: 40px;
@@ -29,7 +28,6 @@
     background-color: rgb(245, 70, 70);
 }
 .cross{
-    /* background-image: url("cross.jpg"); */
     height: 100px;
     align-items: center;
 }
@@ -52,9 +50,6 @@
     margin: auto; 
 }
 .container {
-  /*   border-left-style: inset;
-    border-left-color: red; 
-    border-left-width: 10px; */
     background-color: white;
     height: 700px;
     padding: -1px;
@@ -90,7 +85,6 @@
     display:block;
 }
 .dropbtn {
-
     color: rgb(83, 83, 85);
     border: none;
     cursor: pointer;
@@ -147,19 +141,16 @@
     height: 100%;
     float: left; 
 }
-/* .material-icons.md-48 { font-size: 48px; } */
 .pageName {
     width: 65%;
     height: 85%;
     float: left;
     padding: 5px 5px 5px 10px;
-    /* text-align: center;  */
 }
 .pageName h2{
     font-size: 40px; 
     font-family: 'Roboto', sans-serif;
     color: #636566; 
-   /*  text-shadow: 2px 2px black;  */
     margin-top: 5px;
 }
 .resultDiv{
@@ -170,13 +161,19 @@
 .title-bar{
     width: 100%;
     height: 50px;
-    /* background: linear-gradient(#585C59, #8696B3 ); */
     color: white;
 }
 .wodContainer{
+    height: 750px; 
     position: relative;
     overflow: hidden;
     padding-top: 5%;
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    top: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 .workOutOfTheDayToggle{
     width: 100%;
@@ -194,9 +191,6 @@
     font-family: 'Fira Sans', sans-serif;
     margin: auto;
 
-}
- .wod {
-   height: 750px;
 }
 }
 
@@ -229,18 +223,15 @@ body{
     padding: 5%;
 }
  .bottomDivs:hover{
-    /* background-color: #C3C7C9; */
     background-image: url("diamond.jpg");
     text-decoration: underline;
     font-size: 25px;
     color: black; 
 } 
  .bottomDivs i:hover{
-    /* background-color: #C3C7C9; */
     background-color: transparent;
 }
 .bottomDivs p:hover{
-    /* background-color: #C3C7C9; */
     background-color: transparent;
 
     
@@ -254,24 +245,13 @@ body{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    /* margin-bottom: 20px; */
     padding: 5%; 
     background-color: transparent; 
-    /*  -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s; */
 }
 
 .bottomDivs i{
     padding-right: 2%;
     background-color: transparent;
-    /*  -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s; */
 }
 
 .cross{
@@ -308,7 +288,6 @@ body{
     transition:.5s;
 }
 .contactInfo i:hover{
-    /* color: rgb(96, 96, 245);  */
     background-color: #919191;
     border-style: solid;
     border-color: rgb(87, 86, 86);
@@ -357,8 +336,6 @@ body{
 .menuDiv {
     width: 100%;
     height: 100%;
-    /* float: left;  */
-    
 }
 .pageName {
     width: 100%;
@@ -418,17 +395,14 @@ body{
     background-color: white;
 
 }
- .wod {
-   height: 750px;
-   background-color: white;
-}
 .wodContainer{
+    height: 750px;
     background-color: white; 
     position: relative;
     overflow: hidden;
     padding-top: 5%;
 }
-/* new menu shit from here down */
+/* new menu from here down */
 .clearfix:after {
 display:block;
 clear:both;
@@ -466,7 +440,6 @@ line-height:0%;
 }
 /*----- Top Level -----*/
 .menu > ul > li {
-/* float:left; */
 display:inline-block;
 position:relative;
 font-size:19px;
@@ -507,9 +480,7 @@ display:block;
 .sub-menu li a:hover, .sub-menu .current-item a {
 background:#3e3436;
 }
-
 }
-
 
 /* Medium sized screens */
 @media screen and (min-width:450px) and (max-width: 1025px){
@@ -539,51 +510,32 @@ body{
     padding: 5%;
 }
  .bottomDivs:hover{
-    /* background-color: #C3C7C9; */
     background-image: url("diamond.jpg");
     text-decoration: underline;
     font-size: 25px;
     color: black; 
 } 
  .bottomDivs i:hover{
-    /* background-color: #C3C7C9; */
     background-color: transparent;
 }
 .bottomDivs p:hover{
-    /* background-color: #C3C7C9; */
     background-color: transparent;
-
-    
 } 
 .bottomDivs i{
     color: red;
     background-color: transparent; 
-    
 }
 .bottomDivs p{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    /* margin-bottom: 20px; */
     padding: 5%; 
     background-color: transparent; 
-    /*  -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s; */
 }
-
 .bottomDivs i{
     padding-right: 2%;
     background-color: transparent;
-    /*  -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s; */
 }
-
 .cross{
     background-color: white; 
     height: 100px;
@@ -618,7 +570,6 @@ body{
     transition:.5s;
 }
 .contactInfo i:hover{
-    /* color: rgb(96, 96, 245);  */
     background-color: #919191;
     border-style: solid;
     border-color: rgb(87, 86, 86);
@@ -644,8 +595,6 @@ body{
     padding-left: 20px;
     padding-right: 5px;
     display: inline; 
-   
-    
 }
 .historical{
     display: none; 
@@ -667,8 +616,6 @@ body{
 .menuDiv {
     width: 100%;
     height: 100%;
-    /* float: left;  */
-    
 }
 .pageName {
     width: 100%;
@@ -697,7 +644,6 @@ body{
     border-bottom: #7F8182;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-  
 }
 .title-bar{
     width: 100%;
@@ -715,7 +661,6 @@ body{
     border-bottom-color: #7F8182;
     border-bottom-width: 2px;
     padding-bottom: 5px;
-
 }
 .workOutOfTheDayToggle:hover{
     font-size: 20px;
@@ -728,17 +673,20 @@ body{
     background-color: white;
 
 }
- .wod {
-   height: 750px;
-   background-color: white;
-}
 .wodContainer{
+    height: 1000px;
     background-color: white; 
+    padding-top: 5%;
     position: relative;
     overflow: hidden;
     padding-top: 5%;
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    top: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
-/* new menu shit from here down */
 .clearfix:after {
 display:block;
 clear:both;
@@ -776,7 +724,6 @@ line-height:0%;
 }
 /*----- Top Level -----*/
 .menu > ul > li {
-/* float:left; */
 display:inline-block;
 position:relative;
 font-size:19px;

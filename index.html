@@ -2,7 +2,13 @@
 <html>
 
 <head>
-
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3519329254611036",
+            enable_page_level_ads: true
+        });
+    </script>
     <title>Code-Wod</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +17,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <!--  <script src="https://apis.google.com/js/api.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Fira+Sans|Graduate|Roboto|Russo+One" rel="stylesheet">
 </head>
 
@@ -21,9 +26,6 @@
             <div class = "title-bar">
             </div>
             <header class = "top">
-                <!-- <div class = "logoDiv">
-                    <img class = "logo" src = "codeWodLogo.png">
-                </div> -->
                 <div class = "menuDiv">
                     <div class = "pageName">
                         <h2>Code-Wod</h2>
@@ -32,16 +34,14 @@
                     <div class="dropDown">
                         <i class="fas fa-list-ul fa-3x dropbtn" onclick="dropDown()">
                         </i>
-                        <!-- <button onclick="dropDown()" class="dropbtn">Dropdown</button> -->
+                       
                         <div id= "myDropdown" class="dropdown-content">
-                            <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
                             <a href="#information"  id  = "about">About</a>
                             <a href="#"id = "currentWod">Current Wod</a>
-                            <a href="#resultDiv" id = "currentResults">Current results</a>
+                            <a href="#resultDiv" id = "currentResults">Last wod results</a>
                             <a href="#" id = "reset">Home</a>
                             <a href="#contactInfo" id = "contact" >Contact</a>
-                            <a href="#blog"id = "blogger">Blog</a>
-                            <!--<a href="#tools">Tools</a> -->
+                            <a href="#blog"id = "blogger">Blog</a> 
                         </div>
                     </div>
                     
@@ -64,19 +64,19 @@
                                         <a href="#" id = "previousWorkouts">Previous Workouts</a>
                                     </li>
                                     <li>
-                                        <a href="#" id = "previousResults">Previus Results</a>
+                                        <a href="#" id = "previousResults">Previous Results</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" id = "fullMenuBlog" >Blog</a>
+                                <a href="#blog" id = "fullMenuBlog" >Blog</a>
                             </li>
                             <li>
-                                <a href="#about" id = "fullMenuAbout">About</a>
+                                <a href="#information" id = "fullMenuAbout">About</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">Contact</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -95,12 +95,12 @@
 
             </div>
             <!-- wod DIV -->
-            <div id="wod" class="wod wodContainer">
-            <!--  <iframe id="wodIframe" src="https://docs.google.com/forms/d/e/1FAIpQLScLrKgvJ0bt5X3oZCzNuig8qitJyjK2FRlFxKZEUWbQtp0GEw/viewform?embedded=true"
-                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
-            
-                <iframe class = ".resp-iframe" id="wodIframe"src="https://docs.google.com/forms/d/e/1FAIpQLSeWO-qoM2sEb_2RQPqCmC3AL_D9BPCF8OIjF6il7FjYd0xgNw/viewform?embedded=true"
-                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
+            <div id="wod" class="wodContainer">
+            <!-- add class = ".resp-iframe" id="wodIframe"  && width="100%" height="100%"-->
+                <iframe class = ".resp-iframe" id="wodIframe"src="https://docs.google.com/forms/d/e/1FAIpQLSccoGWDI039oYMUgOCIoc3vlYJzeb-TIH_z9hpfeNWvaehMyA/viewform?embedded=true"
+                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+               <!--  <iframe class = ".resp-iframe" id="wodIframe"src="https://docs.google.com/forms/d/e/1FAIpQLSeWO-qoM2sEb_2RQPqCmC3AL_D9BPCF8OIjF6il7FjYd0xgNw/viewform?embedded=true"
+                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>  -->
                 
                 
             </div>
@@ -118,11 +118,13 @@
             </div>
             <!-- results div -->
             <div class="bottomDivs" id="resultToggle">
-                <p ><i class="fas fa-chevron-circle-down"></i><strong>Current Workout Results</strong></p>
+                <p ><i class="fas fa-chevron-circle-down"></i><strong>Last Workout Results</strong></p>
             </div>
             <div class="resultDiv" id="resultDiv">
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"
-                    width="100%" height="250"></iframe>
+                <!-- add width="100%" height="250" in front of first > -->
+                <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"
+                    width="100%" height="250"></iframe> -->
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_t7roDTi4CsfnzK8ZY7JlRJoChZpIpVBMexpSE_8p8T0yFQ089OBJ61QvIilGemvzu9PuJBap-D92/pubhtml?widget=true&amp;headers=false"width="100%" height="250"></iframe>
             </div>
            
             <!-- INFO DIV -->
@@ -197,13 +199,7 @@
    
     
     
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-3519329254611036",
-            enable_page_level_ads: true
-        });
-    </script>
+    
     <script src="codeWod.js"></script>
 </body>
 
