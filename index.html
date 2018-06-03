@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-3519329254611036",
             enable_page_level_ads: true
         });
-    </script>
+    </script> -->
     <title>Code-Wod</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,6 +38,8 @@
                         <div id= "myDropdown" class="dropdown-content">
                             <a href="#information"  id  = "about">About</a>
                             <a href="#"id = "currentWod">Current Wod</a>
+                            <a href="#" id="oneBackMobile">Last Wod</a>
+                            <a href="#" id="twoBackMobile">2 prior</a>
                             <a href="#resultDiv" id = "currentResults">Last wod results</a>
                             <a href="#" id = "reset">Home</a>
                             <a href="#contactInfo" id = "contact" >Contact</a>
@@ -56,15 +58,15 @@
                                 <a href="#" id = "fullMenuHome">Home</a>
                             </li>
                             <li>
-                                <a href="#">Historical
+                                <a href="#" id="prevButton">Previous
                                     <span class="arrow">&#9660;</span>
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#" id = "previousWorkouts">Previous Workouts</a>
+                                        <a href="#" id = "previousWorkouts">Last posted</a>
                                     </li>
                                     <li>
-                                        <a href="#" id = "previousResults">Previous Results</a>
+                                        <a href="#" id = "twoBack">2 wods back</a>
                                     </li>
                                 </ul>
                             </li>
@@ -74,9 +76,6 @@
                             <li>
                                 <a href="#information" id = "fullMenuAbout">About</a>
                             </li>
-                            <!-- <li>
-                                <a href="#">Contact</a>
-                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -96,13 +95,6 @@
             </div>
             <!-- wod DIV -->
             <div id="wod" class="wodContainer">
-            <!-- add class = ".resp-iframe" id="wodIframe"  && width="100%" height="100%"-->
-                <iframe class = ".resp-iframe" id="wodIframe"src="https://docs.google.com/forms/d/e/1FAIpQLSccoGWDI039oYMUgOCIoc3vlYJzeb-TIH_z9hpfeNWvaehMyA/viewform?embedded=true"
-                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-               <!--  <iframe class = ".resp-iframe" id="wodIframe"src="https://docs.google.com/forms/d/e/1FAIpQLSeWO-qoM2sEb_2RQPqCmC3AL_D9BPCF8OIjF6il7FjYd0xgNw/viewform?embedded=true"
-                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>  -->
-                
-                
             </div>
             <!-- blog div -->
             <div class="bottomDivs" id="blogToggle">
@@ -124,7 +116,7 @@
                 <!-- add width="100%" height="250" in front of first > -->
                 <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlUkyKqM_UBrIxv-7zqr-xQbmIhRwyfUJG6qKMYCGnDxgLPKKKaIqaJvB3bkeCdov6M4_M3nEV2xbQ/pubhtml?widget=true&amp;headers=false"
                     width="100%" height="250"></iframe> -->
-                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_t7roDTi4CsfnzK8ZY7JlRJoChZpIpVBMexpSE_8p8T0yFQ089OBJ61QvIilGemvzu9PuJBap-D92/pubhtml?widget=true&amp;headers=false"width="100%" height="250"></iframe>
+                   <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_t7roDTi4CsfnzK8ZY7JlRJoChZpIpVBMexpSE_8p8T0yFQ089OBJ61QvIilGemvzu9PuJBap-D92/pubhtml?widget=true&amp;headers=false"width="100%" height="250"></iframe> -->
             </div>
            
             <!-- INFO DIV -->
