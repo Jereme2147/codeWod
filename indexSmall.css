@@ -167,7 +167,7 @@
     height: 750px; 
     position: relative;
     overflow: hidden;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     right: 0; 
     bottom: 0; 
     left: 0;
@@ -765,4 +765,13 @@ display:block;
 background:#3e3436;
 }
 
+}
+
+#message{
+    height: 50px;
+    display: block;
+    padding: 0;
+}
+#message p{
+    margin: 2px;
 }
