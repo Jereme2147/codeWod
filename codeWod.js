@@ -1,5 +1,9 @@
 "use strict";
-
+//using 4 globals for ease of access to the current workouts.  Will be easier to change daily as well.
+let woOne = `https://docs.google.com/forms/d/e/1FAIpQLSeNJaNbAdPXxXWH1kvTHuPivz0R4eVn34U8D79jutLnvd0AqA/viewform`;
+let woTwo = `https://docs.google.com/forms/d/e/1FAIpQLSeTllhzBip7fCoLrvzkvC-a0lqgozTs7nmH7O5NQOqOg6yWOg/viewform`;
+let woThree = `https://docs.google.com/forms/d/e/1FAIpQLSccoGWDI039oYMUgOCIoc3vlYJzeb-TIH_z9hpfeNWvaehMyA/viewform`;
+let recentResult = `<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKWRjx_d-Z_BaNELPWhREEJh9p49BffM3GDvc39w2Y728yD6K-6tHNkpANJBADMQbx0eB4vrHViQyV/pubhtml?widget=true&amp;headers=false"></iframe>`;
 $(document).ready(function(){
    // alert("Please see the blog post for information");
     $("#blog").toggle();
@@ -8,7 +12,6 @@ $(document).ready(function(){
     $("#workOutOfTheDayToggle").click(function(){
         $("#wod").toggle("slow");
         $("#crossDiv").toggle();
-        //fucking with it under here
         errorMessage();
     })
     $("#crossDiv").click(function(){
@@ -81,7 +84,7 @@ function hideDivs(){
 //error message for mobile. Don't delete, but can comment out
 //when there's not issues. 
 function errorMessage(){
-    let message = `<div id="message"><p>Trouble viewing or scoring? Use wod link in the menu.</p></div>`
+    let message = `<div id="message" style="margin:auto"><p>Trouble viewing or scoring? <a href="${woOne}" target="_blank">CLICK</a>.</p></div>`
     if($("#wod").height() < 10){
         if ($(window).width() < 900) {
             $("#wod").prepend(message);
@@ -93,25 +96,18 @@ function errorMessage(){
 
 $(document).ready(function(){
     //3-5 days of workouts. 
+   //no need to edit anymore.  Using the globals for ease of daily edits and other options. 
     let workouts = {
-  ////***********************************
-  ///only change between lines      
-        //new wod goes bellow. from preview copy all up to viewform
-        newest: `https://docs.google.com/forms/d/e/1FAIpQLSeNJaNbAdPXxXWH1kvTHuPivz0R4eVn34U8D79jutLnvd0AqA/`,
-        //last wod results go under here. no quotes up to false from EMBED option
-        oneBackResults: `https://docs.google.com/spreadsheets/d/e/2PACX-1vRKWRjx_d-Z_BaNELPWhREEJh9p49BffM3GDvc39w2Y728yD6K-6tHNkpANJBADMQbx0eB4vrHViQyV/pubhtml?widget=true&amp;headers=false`,
-        //last wod goes here up to including /
-        oneBack: `https://docs.google.com/forms/d/e/1FAIpQLSeTllhzBip7fCoLrvzkvC-a0lqgozTs7nmH7O5NQOqOg6yWOg/`,
-        //two wods back goes here up to including /
-        twoBack: `https://docs.google.com/forms/d/e/1FAIpQLSccoGWDI039oYMUgOCIoc3vlYJzeb-TIH_z9hpfeNWvaehMyA/`,
-  ////***************************************      
+        newest: woOne.replace('viewform', ''),
+        oneBack: woTwo.replace('viewform', ''),
+        twoBack: woThree.replace('viewform', ''),
+        oneBackResutlts: recentResult.replace(`<iframe src="`, '').replace(`"></iframe>`, ''),
         oneBackResultsStart: `<iframe src="`,
         oneBackResutltsEnd: `"width="100%" height="250"></iframe>`,
         strStart: `<iframe class=".resp-iframe" id = "wodIframe" src = "`,
         strEnd: `viewform?embedded=true"width = "100%" height = "100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>`,
-        //do not change bellow
         oldEnd: `viewform`,
-    }
+    };
     //bellow goes away if I get the mobile iframe issue solved
     $("#currentWod").click(function () {
         $("#currentWod").attr("href", `${workouts.newest}${workouts.oldEnd}`);
