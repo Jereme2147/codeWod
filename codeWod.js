@@ -1,9 +1,9 @@
 "use strict";
 //using 4 globals for ease of access to the current workouts.  Will be easier to change daily as well.
-let woOne = `https://docs.google.com/forms/d/e/1FAIpQLSeVLJWyQ4Om7MCi9m_1QODhRoXyyyd4PK-J6TWj9msw_Dzn9w/viewform`;
-let woTwo = `https://docs.google.com/forms/d/e/1FAIpQLSeNJaNbAdPXxXWH1kvTHuPivz0R4eVn34U8D79jutLnvd0AqA/viewform`;
-let woThree = `https://docs.google.com/forms/d/e/1FAIpQLSeTllhzBip7fCoLrvzkvC-a0lqgozTs7nmH7O5NQOqOg6yWOg/viewform`;
-let recentResult = `<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSglD_Xy_iziyLP3M9-LpkvW5QYn9_mR1CaPdaNcHdaKjt6hG8EG1EeUsTj_QEMpfDV35HlhCcODrsI/pubhtml?widget=true&amp;headers=false"></iframe>`;
+let woOne = `https://docs.google.com/forms/d/e/1FAIpQLSdZGyPrso56KQb-WBNP_nUm3UjYS05jO_ObD_bcP1bi5u3wBw/viewform`;
+let woTwo = `https://docs.google.com/forms/d/e/1FAIpQLSfVDm2u2OG2XAH9pUegr3Rv7ufMDjXbMqXgJvu1RzB6F9K6Vg/viewform`;
+let woThree = `https://docs.google.com/forms/d/e/1FAIpQLSdgsmUI80wBbtkC7XUEJFCCtRhNWJ0_QV3ZyoSAdwNay4E7yA/viewform`;
+let recentResult = `<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9dacwiRUis4SqIMLr5XALzX7Z98OHX-xs-mMEC8HdJwlibWY5Fsk-8HWsIUUp-xtHob_7v74ZDHie/pubhtml?widget=true&amp;headers=false"></iframe>"></iframe>`;
 $(document).ready(function(){
    // alert("Please see the blog post for information");
     $("#blog").toggle();
